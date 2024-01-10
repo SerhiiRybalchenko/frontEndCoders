@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/frontEndCoders/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    
+    <script type="module" crossorigin src="/frontEndCoders/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/frontEndCoders/assets/index-79b7c6b9.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container flex-center">
+    <nav class="header-nav">
+      <a href="./index.html">
+        <svg class="header-logo-icon" width="127" height="20">
+          <use href="/frontEndCoders/assets/icons-8920830f.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="header-menu-list">
+        <li class="header-menu-item">
+          <a class="header-menu-link current" href="#about">About us</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#courses">Our courses</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#mentors">Our mentors</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#reviews">Reviews</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#contacts">contacts</a>
+        </li>
+      </ul>
+      <div class="header-buttons">
+        <button class="btn-sign" type="button" aria-label="sign in button">
+          <svg class="btn-sign-icon" width="16" height="16">
+            <use href="/frontEndCoders/assets/icons-8920830f.svg#icon-camera"></use>
+          </svg>
+        </button>
+        <button class="menu-btn js-open-menu" type="button" aria-label="Open menu button">
+          <svg class="menu-btn-icon" width="32" height="22">
+            <use href="/frontEndCoders/assets/icons-8920830f.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <button class="btn-primary" type="button">Sign up </button>
+  </div>
+</header>
+
+<div class="mobile-menu js-menu-container">
+  <button class="menu-close-btn js-close-menu" type="button">
+    <svg class="menu-close-icon" width="20" height="20">
+      <use href="/frontEndCoders/assets/icons-8920830f.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link current header-link" href="#about">About us</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link header-link" href="#courses">Our courses</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link header-link" href="#mentors">Our mentors</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link header-link" href="#reviews">Reviews</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link header-link" href="#contacts">contacts</a>
+    </li>
+  </ul>
+</div>
+
+    <main>
+      <section class="hero" id="hero">
+    <div class="container">
+        <div class="wrapper">
+            <h1 class="hero-title"></h1>
+            <p class="hero-text">
+                Our photography school offers an unforgettable journey, where you can learn the basics of composition, master technical skills, translate your unique ideas.
+            </p>
+            <div class="hero-footer">
+                <div class="hero-students">
+                    <img  class="hero-students-img" src="../img/hero/mob-img-1.jpg" alt="young woman">
+                    <img class="hero-students-img" src="../img/hero/mob-img-2.jpg" alt="young man with brouwn hear">
+                    <img class="hero-students-img" src="../img/hero/mob-img-3.jpg" alt="young woman">
+                    <p class="hero-students-text">Our happy students</p>
+                </div>
+                <div class="hero-reviews">
+                    <img src="" alt="">
+                    <p>Reviews</p>
+                    <p>1500</p>
+                </div>
+            </div>
+        </div>
+        <picture>
+            <!-- Desktop -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="/frontEndCoders/assets/desktop-88434ca9.png 1x, /frontEndCoders/assets/desktop@2x-1d56e3f6.png 2x" />
+            <!-- Tablet -->
+            <source
+              media="(min-width: 768px)"
+              srcset="/frontEndCoders/assets/hero-tab-dcd9b991.png 1x, /frontEndCoders/assets/hero-tab@2x-cab854a7.png 2x" />
+            <!-- Mobile -->
+            <source
+              media="(max-width: 767px)"
+              srcset="/frontEndCoders/assets/hero-mob-6f367be1.png 1x, /frontEndCoders/assets/hero-mob@2x-b36fb192.png 2x" />
+            <img
+              class="hero-img"
+              src="../img/hero/hero-mob.png"
+              alt="young photographer with camera in right hand."
+              width="259"
+              height="314"
+              loading="lazy" />
+          </picture>
+    </div>
+</section>
+      <section class="about">
+</section>
+
+    </main>
+    <footer>
+    
+</footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
