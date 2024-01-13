@@ -14,7 +14,7 @@
     />
     
     <script type="module" crossorigin src="/frontEndCoders/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/frontEndCoders/assets/index-eb5140ba.css">
+    <link rel="stylesheet" href="/frontEndCoders/assets/index-a844cff7.css">
   </head>
   <body>
     <header class="header">
@@ -303,45 +303,54 @@
 </section>
 
       
-      <section class="sing-up-section">
-    <div class="container">
-        <h2>Sing Up</h2>
-        <p>Please use the form below to contact us. Enter your name, email, and message and we'll get back to you
+      <section class="sing-up container">
+   <div class="sing-up-content">
+    <div class="sing-up-description">
+        <h2 class="sing-up-header">Sing <span class="up-span">Up</span></h2>
+        <p class="field-description">Please use the form below to contact us. Enter your name, email, and message and we'll get back to you
             shortly.</p>
-        <form action="#">
-            <div class="">
-                <label class="" for="user-name"></label>
-                <div class="">
-                    <input class="" type="text" id="user-name" name="user-name" placeholder="Enter your name">
+        <form class="form" action="#">
+            <div class="user-form">
+                <label class="user-name" for="user-name"></label>
+                <div class="user-name-input">
+                    <input class="user-input" type="text" pattern="[A-Za-z\s]+" id="user-name" name="user-name" placeholder="Enter your name">
                 </div>
             </div>
-            <div class="">
+            <div class="user-form">
                 <label class="" for="user-email"></label>
-                <div class="">
-                    <input class="" type="text" id="user-email" name="user-email" placeholder="Enter your email">
+                <div class="user-name-input">
+                    <input class="user-input" type="text" id="user-email" name="user-email" placeholder="Enter your email">
                 </div>
             </div>
-            <div class="">
+            <div class="user-form textarea">
                 <label class="" for="user-comment"></label>
-                <textarea class="" name="user-comment" id="user-comment" cols="30" rows="10"
+                <textarea class="user-input textarea" name="user-comment" id="user-comment" cols="10" rows="5"
                     placeholder="Message"></textarea>
             </div>
-            <button class="">
+            <button type="submit" class="sing-up-button">
                 Send
             </button>
-            <p>By clicking on “Send” button, you agree to our <a href="">Privacy Policy</a>,
+            <p class="sing-up-privacy">By clicking on &#8220;Send&#8220; button, you agree to our <a class="privacy-link" href="">Privacy Policy</a>,<br>
                 and allow Promodo to use this information for marketing purposes.</p>
         </form>
     </div>
-    <div class="container">
-        <picture>
-            <img src="../img/signup/objective.png" alt="">
-        </picture>
-        <picture>
-            <img src="../img/signup/camera.png" alt="">
-        </picture>
+    <div class="photos">
+    <picture class="photos-design obj">
+        <source media="(max-width: 1439px)" srcset="/frontEndCoders/assets/objective-0e18a53b.png 1x, /frontEndCoders/assets/objective@2x-338db2c8.png 2x" />
+        <source media="(min-width: 1440px)"
+            srcset="/frontEndCoders/assets/1440-objective-78a2562d.png 1x, /frontEndCoders/assets/1440-objective@2x-a548fefb.png 2x" />
+        <img src="/frontEndCoders/assets/objective-0e18a53b.png" alt="professional objective" width="163" height="154" />
+    </picture>
+    <picture class="photos-design cam">
+        <source media="(max-width: 1439px)" srcset="/frontEndCoders/assets/camera-4cbbad7a.png 1x, /frontEndCoders/assets/camera@2x-02f21406.png 2x" />
+        <source media="(min-width: 1440px)" srcset="/frontEndCoders/assets/1440-camera-f53a9bdb.png 1x, /frontEndCoders/assets/1440-camera@2x-2c3422b2.png 2x" />
+        <img src="/frontEndCoders/assets/camera-4cbbad7a.png" alt="professional camera" width="254" height="313" />
+    </picture>
     </div>
+   </div>
 </section>
+
+
       <!DOCTYPE html>
 <html lang="en">
   <head>
